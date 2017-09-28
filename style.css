@@ -1,0 +1,382 @@
+/*========================================0.1 BASE CSS================================================================*/
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {}
+
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*============ BASE CSS==========================*/
+
+.top-nav{
+    background-color: #000;
+    color: #fff;
+    margin-left:30px; 
+}
+.top-nav a{
+    color: #fff;
+    padding: 30px;
+    text-decoration: none;
+}
+
+
+body {
+    background-color:orange;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#preloader {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background: #fff;
+    z-index: 9999
+}
+
+.preloader_spinner {
+    background: url(../images/preloader_spinner.gif);
+    background-repeat: no-repeat scroll center center;
+    display: block;
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    left: 52%;
+    top: 52%;
+    z-index: 9999999;
+    margin-left: -66px;
+    margin-top: -66px;
+}
+
+body.preloader_active {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    width: 100%
+}
+
+.section_color {
+    padding: 20px 30px 10px 30px;
+}
+
+.background_black {
+    background-color: #a6bf33;
+    padding: 50px 20px 32px 20px;
+}
+
+.slider_area {}
+
+.slider_text {
+    padding: 30px 10px 30px 10px;
+    text-align: center;
+    background-color: #AAA189;
+}
+
+.slider_text h1 {
+    color: #000;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.slider_text h2 {
+    color: #000;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-weight: 688;
+    letter-spacing: 0.3px;
+}
+
+.slider_text h3 {
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+
+/*-----------nav bar top------------------*/
+
+.menu_area .menu {
+    margin: 5px 30px 10px 30px;
+    background-color: #9ACD32 ;
+    text-align: center;
+}
+
+.menu_section_color {}
+
+.menu ul li {
+    display: inline-block;
+    width: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.menu ul li:hover{
+    background-color: grey;
+}
+.menu ul li.active{
+    background-color: grey;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color:green;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+.menu ul li:hover a{
+    color: red;
+}
+.menu ul .active a {
+    color: yellow;
+}
+.menu ul .active:hover a {
+    color: yellow;
+}
+
+
+.menu {
+    text-align: center;
+}
+
+
+/*---------------image or content with row-----------*/
+
+.home_page_images_area {
+    margin: 30px 30px 30px 30px;
+    float: left;
+    padding: 0;
+    border: 4px solid #a6bf33;
+}
+
+.product_image,
+.product_image_1,
+.product_image_3,
+.product_image_4 {
+    float: left;
+    width: 33.33%;
+    position: relative;
+    height:200px;
+    overflow: hidden;
+}
+
+.product_image img,
+.product_image_1 img,
+.product_image_3 img {
+    width: 200px;
+    height: 200px;
+}
+
+.blank{
+    border: 0;
+}
+.blank .product_image img,
+.blank .product_image_1 img,
+.blank .product_image_3 img,
+.blank .product_image_4 img{
+    border: 4px solid #a6bf33;
+}
+
+.hover span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(0,0,0,0.40);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 100px;
+    display: none;
+}
+.hover div:hover span{
+    display: block;
+}
+.hover span a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*
+.product_image{
+    margin: 30px;
+}
+.product_image_1,
+.product_image_3{
+    margin-top: 30px;
+}
+.product_image img,
+.product_image_1 img,
+.product_image_3 img{
+    width: 165px;
+    height:150px;
+}
+.row_2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.margin-top{
+    margin-top: 0;
+}
+.row_2{
+    margin-bottom: 0;
+}
+*/
+
+
+/*---------------  image size -----------------------*/
+
+.responsive {
+    width: 100%;
+}
+
+
+/*----------------footer area ---------------*/
+
+.footter_area {
+    background-color:darkgreen;
+    margin: 20px 30px 10px 30px;
+    clear: both;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: #000;
+}
+
+.footter_area h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.footter_area a {
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+
+/*contact form*/
+
+.form-submit {
+    background-color: #AAA189;
+    margin: 20px 30px 10px 30px;
+    clear: both;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: #656565;
+    overflow: hidden;
+}
+
+.form-submit input,
+.form-submit textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.form-submit button {
+    padding: 15px 35px 15px 35px;
+    cursor: pointer;
+    background-color: #a6bf33;
+    border: 0;
+    color: #050a1e;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.social{
+    list-style-type: none;
+    list-style: none;
+    margin-top: 20px;
+}
+.social li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*----------------about us----------------------*/
+.about-mid{
+    background-color: #AAA189;
+    margin: 0px 30px 10px 30px;
+    clear: both;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: #050a1e;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.about-mid p{
+    text-align: justify;
+    line-height: 1.5rem;
+    padding-bottom: 20px;
+}
+.about-mid  h3{
+    font-weight: bold;
+    color: #fff;
+    font-size: 22px;
+}

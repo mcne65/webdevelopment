@@ -1,0 +1,4 @@
+body {background-color: blue;}
+
+lower_panel p {display:none;}
+lower_panel h2: hover + p {display: block;}
